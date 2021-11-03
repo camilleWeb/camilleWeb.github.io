@@ -1,11 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Comfortaa:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Lobster+Two&family=Montserrat:wght@100&family=Press+Start+2P&family=Zen+Kurenaido&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
+body {
+    height: 100%;
+    width: 100%;
+}
+section {
+    height: 110vh;
+    width: 100%;
+    text-align: center;
 
+}
+section h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 3rem;
+    color: white;
+    padding-top: 50px;
+}
         /************** Up nav bar  ****************/
 .up-nav {
     display: flex;
@@ -29,6 +45,9 @@
 .up-nav ul li {
     font-size: 1.3rem;
     margin-right: 100px;
+}
+.up-nav ul li:hover {
+
 }
 .up-nav ul li a {
     text-decoration: none;
@@ -63,7 +82,9 @@
     margin-top: 30px;
     padding: 5px;
 }
-
+#right-nav ul li:hover {
+    background: #3f0d12;
+}
 #right-nav ul li a {
     text-decoration: none;
     color: azure;
@@ -122,25 +143,10 @@
     left: 170px;
 }
         /************* section ******************* */
-section {
-    min-height: 110vh;
-    text-align: center;
 
-}
-section h1 {
-    font-family: 'Baloo 2', cursive;
-    font-size: 3rem;
-    color: white;
-    padding-top: 50px;
-
-}
 #home {
-    min-height: 100vh;
-    background:url('./wallpaperbetter.com_1920x1080.jpg') no-repeat fixed;
+    background: url("./backgroundIntro.png") no-repeat fixed;
     background-size: cover;
-}
-#home h1 {
-    display:inline-block;
 }
 #about {
     background: url('./redlight.jpg') no-repeat;
@@ -150,6 +156,28 @@ section h1 {
     background:url('./Darkrail.jpg') no-repeat;
     background-size: cover;
 }
+/* ************************* Introduction ************************** */
+.presentation {
+   position: absolute;
+    height: 800px;
+    width: 500px; 
+    top: 100px;
+    left: 2000px;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.presentation p {
+    font-size: 2.5rem;
+    padding: 30px;
+}
+.presentation h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 0px 0px 15px #5c0b1d;
+    font-size: 5rem;
+}
+
 
 /*********************  SPACE PARALLAX ***********************/
 .space-background {
