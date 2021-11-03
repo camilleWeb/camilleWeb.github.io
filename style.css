@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    scroll-behavior: smooth;
 }
 body {
     height: 100%;
@@ -45,9 +46,6 @@ section h1 {
 .up-nav ul li {
     font-size: 1.3rem;
     margin-right: 100px;
-}
-.up-nav ul li:hover {
-
 }
 .up-nav ul li a {
     text-decoration: none;
@@ -142,6 +140,28 @@ section h1 {
 #right-nav.active #rigft-remove-btn {
     left: 170px;
 }
+/* ************************* Introduction ************************** */
+.presentation {
+    position: absolute;
+     height: 800px;
+     width: 500px; 
+     top: 100px;
+     left: 2000px;
+     color: white;
+     text-align: center;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: bold;
+ }
+ .presentation p {
+     font-size: 2.5rem;
+     padding: 30px;
+ }
+ .presentation h1 {
+     font-family: 'Press Start 2P', cursive;
+     text-shadow: 0px 0px 15px #5c0b1d;
+     font-size: 5rem;
+ }
+ 
         /************* section ******************* */
 
 #home {
@@ -152,33 +172,20 @@ section h1 {
     background: url('./redlight.jpg') no-repeat;
     background-size: cover
 }
-#contact {
-    background:url('./Darkrail.jpg') no-repeat;
-    background-size: cover;
+/* ********************** Scroll Animation ********************* */
+.anim {
+    background-color: #3f0d12;
+    background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+    height: 150vh;
+    position: relative;
+    overflow: hidden;
 }
-/* ************************* Introduction ************************** */
-.presentation {
-   position: absolute;
-    height: 800px;
-    width: 500px; 
-    top: 100px;
-    left: 2000px;
-    color: white;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+#marion{
+    position: absolute;
+    height: 100px;
+    top: 50%;
+    left: 0%;
 }
-.presentation p {
-    font-size: 2.5rem;
-    padding: 30px;
-}
-.presentation h1 {
-    font-family: 'Press Start 2P', cursive;
-    text-shadow: 0px 0px 15px #5c0b1d;
-    font-size: 5rem;
-}
-
-
 /*********************  SPACE PARALLAX ***********************/
 .space-background {
     font-family: 'Comfortaa', cursive;
