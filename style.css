@@ -55,6 +55,7 @@
     font-family: 'Comfortaa', cursive;
     font-size: 1.5rem;
     color: azure;
+    list-style: none;
 }
 
 #right-nav ul li {
