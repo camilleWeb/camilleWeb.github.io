@@ -173,6 +173,7 @@ section h1 {
     background: rgba(255, 255, 255, 1);
     cursor: pointer;
     text-align: center;
+    transition: .25s;
 }
 .string {
     margin: 2px;
