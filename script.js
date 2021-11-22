@@ -25,7 +25,79 @@ var tl = gsap.timeline();
 tl.to(".title-Wel", {x:-1380, duration:1})
 .to(".pa1", {x:-1580, duration:1},"-=0.5")
 .to(".pa2", {x:-1180, duration:1},"-=0.5");
+/********************* Ugo btn anim  *****************/
 
+let plusBtn = document.querySelector(".plus");
+let minusBtn = document.querySelector(".minus");
+let editBtn = document.querySelector(".edit");
+let fullHpBtn = document.querySelector(".full-life");
+const count = document.querySelector(".hp-count");
+
+
+howManyHp = 0;
+maxHp = 30;
+minHp = 0;
+let addRemove = true;
+window.onload = () => {
+    if(localStorage.userLife != null) {
+        howManyHp = localStorage.userLife;
+        count.innerText = `${howManyHp}`;
+    } else {
+        let howManyHp = maxHp;
+        localStorage.userLife = howManyHp;
+        count.innerText = `${howManyHp}`;
+    }
+}
+
+function storage() {
+    window.localStorage.userLife = count.innerText;
+}
+
+editBtn.addEventListener('click', editHp);
+
+function editHp() {
+
+    if(addRemove == true) {
+        plusBtn.classList.add("plus_anim");
+        minusBtn.classList.add("minus_anim");
+        fullHpBtn.classList.add("full_anim");
+        addRemove = false;
+
+    } else if(addRemove == false) {
+        plusBtn.classList.remove("plus_anim");
+        minusBtn.classList.remove("minus_anim");
+        fullHpBtn.classList.remove("full_anim");
+        addRemove = true;
+    }
+}
+plusBtn.addEventListener('click', (e)=> {
+    e.preventDefault();
+    if(howManyHp < maxHp) {
+        howManyHp++;
+        count.innerText = `${howManyHp}`;
+        storage();
+        console.log(localStorage.userLife);
+    }
+})
+minusBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if(howManyHp != minHp) {
+        howManyHp--;
+        count.innerText = `${howManyHp}`;
+        storage();
+    }
+})
+
+
+fullHpBtn.addEventListener('click', addFull);
+
+function addFull() {
+    if(howManyHp != maxHp) {
+        howManyHp = maxHp;
+        count.innerText = `${howManyHp}`;
+        storage();
+    }
+}
 /* ******************* Scroll Rocket Animation ***************** */
 var road = [
     {x:0 , y: 0},

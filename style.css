@@ -140,6 +140,85 @@ section h1 {
 #right-nav.active #rigft-remove-btn {
     left: 170px;
 }
+/********************* Btn UgoWebSite Design ***********/
+.perso {
+    position: absolute;
+    top: 1200px;
+    left: 500px;
+    height: 450px;
+    width: 300px;
+    border: 1px solid black;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: ease-out 0.2s;
+    border-radius: 10px;
+}
+.perso:hover {
+    background: rgba(255, 255, 255, .5);
+    transform: translateY(-4px);
+}
+.hp { 
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap:nowrap;
+    margin-top: 50px;
+
+}
+.hp span i {
+    font-size: 1.2rem;
+    padding: 8px;
+    margin: 2px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    text-align: center;
+}
+.string {
+    margin: 2px;
+    padding: 5px;
+    font-size: 1.9rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: blue;
+    z-index: 2;
+    position: relative;
+}
+
+/************ Button fonction **********************/
+
+
+.hp span i:hover {
+    transform: scale(1.2);
+    color: red;
+}
+.edit {
+    margin-left: 3px;
+}
+.boutn {
+    position: absolute;
+    top: 60px;
+    left: 65px;
+    z-index: 0;
+    transition: .25s cubic-bezier(0.25, 0, 0, 1);
+}
+
+.active {
+ z-index: 3;
+}
+.plus_anim {
+    top: 60px;
+    left: 25px;
+}
+.minus_anim {
+    top: 20px;
+    left: 30px;
+}
+.full_anim {        
+    top: 10px;
+    left: 68px;  
+}
+
 /* ************************* Introduction ************************** */
 .presentation {
     position: absolute;
