@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&family=Rock+3D&family=Shadows+Into+Light&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*********** Main page *************/
+#root, #main-nav, #intro {
+    height: 100%;
+    width: 100%;
+}
+#main-page {
+    height: 100vh;
+    width: 100%;
+}
+/*********** NavBar **********/
+#main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100px;
+    width: 100%;
+        a {
+            font-family: 'Julius Sans One', sans-serif;
+            font-size: 2em;
+            text-decoration: none;
+            text-transform: uppercase;
+            color:white;
+            background: black;
+            font-weight: bold;
+            padding: 20px;
+            margin-right: 10px;
+        }
+}
+/*********** Page Acceuil **********/
+#intro {
+    background: burlywood;
+
+    h1 {
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    font-size: 15em;
+    color: black;
+    letter-spacing: 5px;
+    }
+
+}
+
+
+
+#section-lancement {
+    height: 100vh;
+    width: 100%;
+
+        h2 {
+            font-family: 'Rock 3D', cursive;
+            font-size: 10em;
+        }
+        p {
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 4em;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+}
