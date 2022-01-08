@@ -1,76 +1,251 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&family=Rock+3D&family=Shadows+Into+Light&display=swap");
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/*********** Main page *************/
-#root, #main-nav, #intro {
+html, body, .master-container {
   height: 100%;
   width: 100%;
 }
 
-#main-page {
-  height: 100vh;
+.nav-bar {
+  height: 100px;
   width: 100%;
-}
-
-/*********** NavBar **********/
-#main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  height: 100px;
-  width: 100%;
-}
-
-#main-nav a {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 2em;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
   background: black;
-  font-weight: bold;
-  padding: 20px;
-  margin-right: 10px;
 }
 
-/*********** Page Acceuil **********/
-#intro {
-  background: burlywood;
+.nav-bar #eQCMv7D4lf91 {
+  margin-left: 100px;
+  margin-top: 350px;
+  padding: 10px;
+  -webkit-transform: scale(3.5);
+          transform: scale(3.5);
+  color: white;
 }
 
-#intro h1 {
-  font-family: 'Bebas Neue', cursive;
+.nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-bar li {
+  list-style: none;
+}
+
+.nav-bar .btn-menu {
+  display: inline-block;
+  border: 2px solid red;
+  font-size: 2rem;
+  margin-right: 25px;
+  padding: 15px;
+  background: black;
+  position: relative;
+  color: white;
   text-transform: uppercase;
-  font-size: 15em;
-  color: black;
-  letter-spacing: 5px;
+  font-weight: bold;
 }
 
-#section-lancement {
+.home {
   height: 100vh;
   width: 100%;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#section-lancement h2 {
-  font-family: 'Rock 3D', cursive;
-  font-size: 10em;
+.astro {
+  position: absolute;
+  top: 550px;
+  left: 850px;
 }
 
-#section-lancement p {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 4em;
+.bio {
+  height: 60vh;
+  width: 100%;
+  background: black;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 3rem;
+  color: white;
+  font-weight: 400;
+}
+
+.bio .intro, .bio .intro2 {
+  position: absolute;
+  display: block;
+  height: 200px;
+  width: 500px;
+}
+
+.bio .intro {
+  top: 600px;
+  left: 250px;
+}
+
+.bio .intro2 {
+  top: 1050px;
+  left: 250px;
+}
+
+.bio #bio-btn, .bio #projet-btn {
+  position: absolute;
+  display: block;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  left: 200px;
+  border: 2px solid white;
+}
+
+.bio #bio-btn {
+  top: 900px;
+}
+
+.bio #projet-btn {
+  top: 1500px;
+}
+
+.contact {
+  height: 100vh;
+  width: 100%;
+  background: black;
+}
+
+.contact #titre-contact {
+  position: absolute;
+  top: 1800px;
+  left: 50px;
+}
+
+.contact span {
+  display: inline-block;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20rem;
   font-weight: bold;
-  letter-spacing: 3px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: -5px;
+  color: white;
+}
+
+.contact span:hover {
+  color: red;
+}
+
+#titre-accueil {
+  position: absolute;
+  left: 50px;
+  top: 200px;
+}
+
+#titre-accueil span {
+  display: inline-block;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20rem;
+  font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: -5px;
+  color: white;
+}
+
+#titre-accueil span:hover {
+  color: red;
+}
+
+.activeRebond {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
 /*# sourceMappingURL=style.css.map */

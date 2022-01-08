@@ -1,65 +1,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&family=Rock+3D&family=Shadows+Into+Light&display=swap');
+
+$color-letter:white;
+$color-bg:black;
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-/*********** Main page *************/
-#root, #main-nav, #intro {
+html, body, .master-container {
     height: 100%;
     width: 100%;
 }
-#main-page {
-    height: 100vh;
-    width: 100%;
-}
-/*********** NavBar **********/
-#main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.nav-bar {
     height: 100px;
     width: 100%;
-        a {
-            font-family: 'Julius Sans One', sans-serif;
-            font-size: 2em;
-            text-decoration: none;
-            text-transform: uppercase;
-            color:white;
-            background: black;
-            font-weight: bold;
-            padding: 20px;
-            margin-right: 10px;
-        }
-}
-/*********** Page Acceuil **********/
-#intro {
-    background: burlywood;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $color-bg;
 
-    h1 {
-    font-family: 'Bebas Neue', cursive;
-    text-transform: uppercase;
-    font-size: 15em;
-    color: black;
-    letter-spacing: 5px;
+    #eQCMv7D4lf91 {
+        margin-left: 100px;
+        margin-top: 350px;
+        padding: 10px;
+        transform: scale(3.5);
+        color: $color-letter;
+    }
+
+    ul {
+        display: flex;
+    }
+    li {
+        list-style: none;
+    }
+    .btn-menu {
+        display: inline-block;
+        border: 2px solid red;
+        font-size: 2rem;
+        margin-right: 25px;
+        padding: 15px;
+        background: $color-bg;
+        position: relative;
+        color: $color-letter;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+.home {
+    height: 100vh;
+    width: 100%;
+    background: $color-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.astro {
+    position: absolute;
+    top: 550px;
+    left: 850px;
+}
+
+.bio {
+    height: 60vh;
+    width: 100%;
+    background: $color-bg;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 3rem;
+    color: $color-letter;
+    font-weight: 400;
+
+    .intro, .intro2 {
+        position: absolute;
+        display: block;
+        height: 200px;
+        width: 500px;
+    }
+    .intro {
+        top: 600px;
+        left: 250px;
+    }
+    .intro2 {
+        top: 1050px;
+        left: 250px;
+    }
+    #bio-btn, #projet-btn {
+    position: absolute;
+    display: block;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    left: 200px;
+    border: 2px solid $color-letter;
+    }
+    #bio-btn {
+        top: 900px;
+    }
+    #projet-btn {
+        top: 1500px;
+    }
+}
+.contact {
+    height: 100vh;
+    width: 100%;
+    background: $color-bg;
+
+    #titre-contact {
+        position: absolute;
+        top: 1800px;
+        left: 50px;
+    }
+    span {
+        display: inline-block;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20rem;
+        font-weight: bold;
+        transition: 0.5s;
+        letter-spacing: -5px;
+        color: $color-letter;
+        
+        &:hover {
+            color: red;
+        }
     }
 
 }
+#titre-accueil {
+    position: absolute;
+    left: 50px;
+    top: 200px;
 
+    span {
+        display: inline-block;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20rem;
+        font-weight: bold;
+        transition: 0.5s;
+        letter-spacing: -5px;
+        color: $color-letter;
 
-
-#section-lancement {
-    height: 100vh;
-    width: 100%;
-
-        h2 {
-            font-family: 'Rock 3D', cursive;
-            font-size: 10em;
+        &:hover {
+            color: red;
         }
-        p {
-            font-family: 'Shadows Into Light', cursive;
-            font-size: 4em;
-            font-weight: bold;
-            letter-spacing: 3px;
-        }
+    }
 }
+.activeRebond {
+    -webkit-animation-name:rubberBand;
+    animation-name:rubberBand;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+@-webkit-keyframes rubberBand{
+    0%{
+      -webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
+        
+        @keyframes rubberBand{0%{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);-ms-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);-ms-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);-ms-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);-ms-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);-ms-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
