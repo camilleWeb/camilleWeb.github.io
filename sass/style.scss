@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&family=Rock+3D&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bubbler+One&family=Julius+Sans+One&family=Rock+3D&family=Shadows+Into+Light&display=swap');
 
-$color-letter:white;
-$color-bg:black;
+
+/************** VARIABLES *************************/
+
+$color-white:white;
+$color-black:black;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,21 +16,15 @@ html, body, .master-container {
     height: 100%;
     width: 100%;
 }
+/******************   NAVBAR    *******************************/
+
 .nav-bar {
     height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: $color-bg;
-
-    #eQCMv7D4lf91 {
-        margin-left: 100px;
-        margin-top: 350px;
-        padding: 10px;
-        transform: scale(3.5);
-        color: $color-letter;
-    }
+    background: $color-black;
 
     ul {
         display: flex;
@@ -39,50 +38,113 @@ html, body, .master-container {
         font-size: 2rem;
         margin-right: 25px;
         padding: 15px;
-        background: $color-bg;
+        background: $color-black;
         position: relative;
-        color: $color-letter;
+        color: $color-white;
         text-transform: uppercase;
         font-weight: bold;
     }
+    /****************** LOGO SVG ********************/
+
+    #eQCMv7D4lf91 {
+        margin-left: 100px;
+        margin-top: 350px;
+        padding: 10px;
+        transform: scale(3.5);
+        color: $color-white;
+    }
+
 }
+
+ /*********************** ACCUEIL ****************************/
+
 .home {
     height: 100vh;
     width: 100%;
-    background: $color-bg;
+    background: $color-black;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.astro {
-    position: absolute;
-    top: 550px;
-    left: 850px;
+
+    /*********************** SCROLL DOWN LOGO ***************************/
+
+    .scroll-logo {
+        position: absolute;
+        top: 870px;
+        left: 150px;
+        color: $color-white;
+        font-size: 3rem;
+        font-family: 'Bubbler One', sans-serif;
+    }
+    #arrow {
+        padding-right: 5px;
+        animation: arrowMouv 1.5s linear infinite alternate both ;
+        -webkit-animation: arrowMouv 1.5s linear infinite alternate both;
+    }
 }
 
+#titre-accueil {
+    position: absolute;
+    left: 50px;
+    top: 300px;
+
+    span {
+        display: inline-block;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20rem;
+        font-weight: bold;
+        transition: 0.5s;
+        letter-spacing: -5px;
+        color: $color-white;
+
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+/************************** ASTRO IMG *****************************/
+
+.astro {
+    position: absolute;
+    top: 750px;
+    left: 850px;
+    animation: astroMouv 5s linear infinite alternate;
+    -webkit-animation:  astroMouv 5s linear infinite alternate;
+}
+/************************** PARAGRAPHE SECTION *************************/
 .bio {
     height: 60vh;
     width: 100%;
-    background: $color-bg;
+    background: $color-black;
     font-family: 'Julius Sans One', sans-serif;
     font-size: 3rem;
-    color: $color-letter;
+    color: $color-white;
     font-weight: 400;
 
     .intro, .intro2 {
         position: absolute;
         display: block;
-        height: 200px;
-        width: 500px;
+        min-height: 200px;
+        width: 550px;
+        padding: 50px;
+        border: 5px solid $color-white;
+        border-radius: 10px;
+    }
+    .intro2 {
+        color: $color-black;
+        background: $color-white;
     }
     .intro {
-        top: 600px;
+        top: 950px;
         left: 250px;
     }
     .intro2 {
-        top: 1050px;
+        top: 1450px;
         left: 250px;
     }
+    /**************************** BUTTON PARAGRAPHE SECTION ********************/
+
     #bio-btn, #projet-btn {
     position: absolute;
     display: block;
@@ -94,23 +156,26 @@ html, body, .master-container {
 	cursor: pointer;
 	outline: inherit;
     left: 200px;
-    border: 2px solid $color-letter;
+    border: 2px solid $color-white;
     }
     #bio-btn {
-        top: 900px;
+        top: 1300px;
     }
     #projet-btn {
-        top: 1500px;
+        top: 2000px;
     }
 }
+
+ /**********************  CONTACT SECTION  **************************/
+
 .contact {
-    height: 100vh;
+    height: 200vh;
     width: 100%;
-    background: $color-bg;
+    background: $color-black;
 
     #titre-contact {
         position: absolute;
-        top: 1800px;
+        top: 2500px;
         left: 50px;
     }
     span {
@@ -120,7 +185,7 @@ html, body, .master-container {
         font-weight: bold;
         transition: 0.5s;
         letter-spacing: -5px;
-        color: $color-letter;
+        color: $color-white;
         
         &:hover {
             color: red;
@@ -128,25 +193,8 @@ html, body, .master-container {
     }
 
 }
-#titre-accueil {
-    position: absolute;
-    left: 50px;
-    top: 200px;
+/*************************** ANIMATION ************************/
 
-    span {
-        display: inline-block;
-        font-family: 'Bebas Neue', cursive;
-        font-size: 20rem;
-        font-weight: bold;
-        transition: 0.5s;
-        letter-spacing: -5px;
-        color: $color-letter;
-
-        &:hover {
-            color: red;
-        }
-    }
-}
 .activeRebond {
     -webkit-animation-name:rubberBand;
     animation-name:rubberBand;
@@ -157,8 +205,76 @@ html, body, .master-container {
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
 }
-@-webkit-keyframes rubberBand{
+@-webkit-keyframes rubberBand {
     0%{
       -webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
         
-        @keyframes rubberBand{0%{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);-ms-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);-ms-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);-ms-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);-ms-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);-ms-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
+@keyframes rubberBand {
+    0%{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);-ms-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);-ms-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);-ms-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);-ms-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);-ms-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
+
+    @keyframes arrowMouv {
+        0%{
+
+            transform: translateY(-5px);
+            -webkit-transform: translateY(-5px);
+            -ms-transform: translateY(-5px);
+        }
+        100%{
+
+            transform: translateY(5px);
+            -webkit-transform: translateY(5px);
+            -ms-transform: translateY(5px);
+        }
+    }
+    @-webkit-keyframes arrowMouv {
+        0%{
+
+            transform: translateY(-5px);
+            -webkit-transform: translateY(-5px);
+            -ms-transform: translateY(-5px);
+        }
+        100%{
+
+            transform: translateY(5px);
+            -webkit-transform: translateY(5px);
+            -ms-transform: translateY(5px);
+        }
+    }
+    @keyframes astroMouv {
+        from {
+            transform: translateY(-20px);
+            transform: translateX(-5px);
+            -webkit-transform:translateY(-20px) ;
+            -webkit-transform:translateX(-5px) ;
+            -ms-transform: translateY(-20px);
+            -ms-transform: translateX(-5px);
+
+        }
+        to {
+            transform: translateX(-10px);
+            transform: translateY(30px);
+            -webkit-transform:translateX(-10px) ;
+            -webkit-transform:translateY(30px) ;
+            -ms-transform: translateX(-10px);
+            -ms-transform: translateY(30px);
+        }
+    }
+    @-webkit-keyframes astroMouv {
+        from {
+            transform: translateY(-20px);
+            transform: translateX(-5px);
+            -webkit-transform:translateY(-20px) ;
+            -webkit-transform:translateX(-5px) ;
+            -ms-transform: translateY(-20px);
+            -ms-transform: translateX(-5px);
+
+        }
+        to {
+            transform: translateX(-10px);
+            transform: translateY(30px);
+            -webkit-transform:translateX(-10px) ;
+            -webkit-transform:translateY(30px) ;
+            -ms-transform: translateX(-10px);
+            -ms-transform: translateY(30px);
+        }
+    }
