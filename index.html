@@ -4,88 +4,234 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="/Font awesome icon/css/all.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/MotionPathPlugin.min.js"></script>
     <title>CamWeb</title>
 </head>
 <body>
     <div class="master-container">
-        <!-- <section class="load-page">
-            <div class="intro-up">
-                <img src="/img/logoup.png" alt="">
-            </div>
-            <div class="container-intro-titre">
-                <div class="intro-div"><span class="intro-span" class="pong">B</span></div>
-                <div class="intro-div"><span class="intro-span" class="pong">I</span></div>
-                <div class="intro-div"><span class="intro-span" class="pong">E</span></div>
-                <div class="intro-div"><span class="intro-span" class="pong">N</span></div>
-                <div class="intro-div"><span class="intro-span" class="pong">V</span></div>
-                <div class="intro-div"><span class="intro-span" class="pong">E</span></div>
-                <div class="intro-div"><span class="intro-span" class="pong">N</span></div>
-                <div class="intro-div"><span class="intro-span" class="pong">U</span></div>
-                <div class="intro-div"><span class="intro-span" class="pong">E</span></div>  
-            </div>
-
-            <div class="intro-down">
-                <img src="/img/logodown.png" alt="">
-            </div>
-             
-        </section> -->
- <nav class="nav-bar">
-            <!-- <svg id="eQCMv7D4lf91" width="500" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 640 480" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><g id="eQCMv7D4lf92" transform="translate(.000001 0.000001)"><g transform="translate(.000001 0.000001)"><path d="M219.748325,199.858171h10.526441l9.429936-20.175679l19.737076,30.482818" transform="translate(.000002 0.000001)" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M219.748325,199.858171h10.526441l9.429936-20.175679l19.737076,30.482818" transform="matrix(-1 0 0 1 499.036832 0.000001)" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g><g id="eQCMv7D4lf96" transform="matrix(-1 0 0-1 499.036841 389.847808)"><path d="M219.748325,199.858171h10.526441l9.429936-20.175679l19.737076,30.482818" transform="translate(.000002 0.000001)" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M219.748325,199.858171h10.526441l9.429936-20.175679l19.737076,30.482818" transform="matrix(-1 0 0 1 499.036832 0.000001)" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g></g><g id="eQCMv7D4lf99" opacity="0"><g id="eQCMv7D4lf910" transform="translate(-.000009 0.505255)"><text dx="0" dy="0" font-family="&quot;eQCMv7D4lf91:::Concert One&quot;" font-size="28" font-weight="400" transform="translate(269.837453 226.086669)" stroke-width="0"><tspan y="0" font-weight="400" stroke-width="0"><![CDATA[EB]]></tspan></text><path d="M230.274773,205.23103l9.429939,20.175679l9.691343-15.24141l10.045731,15.241408l9.320285-20.17568" transform="translate(.000001 0.000003)" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g><g id="eQCMv7D4lf914"><text dx="0" dy="0" font-family="&quot;eQCMv7D4lf91:::Concert One&quot;" font-size="28" font-weight="400" transform="translate(197.816702 181.57511)" stroke-width="0"><tspan y="0" font-weight="400" stroke-width="0"><![CDATA[CA]]></tspan></text><path d="M230.274768,179.064766l9.429941-20.175679l9.691344,15.241408l10.045731-15.24141l9.320285,20.175678" transform="translate(.000003 0.000004)" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g></g><path d="" fill="none" stroke="#000" stroke-width="1.28"/><script><![CDATA[(function(s,i,u,o,c,w,d,t,n,x,e,p){w[o]=w[o]||{};w[o][s]=w[o][s]||[];w[o][s].push(i);e=d.createElementNS(n,t);e.async=true;e.setAttributeNS(x,'href',[u,s,'.','j','s','?','v','=',c].join(''));e.setAttributeNS(null,'src',[u,s,'.','j','s'].join(''));p=d.getElementsByTagName(t)[0];p.parentNode.insertBefore(e,p);})('5c7f360c',{"root":"eQCMv7D4lf91","animations":[{"elements":{"eQCMv7D4lf92":{"transform":{"data":{"o":{"x":249.518418,"y":202.544602,"type":"corner"},"t":{"x":-249.518417,"y":-202.544601}},"keys":{"r":[{"t":0,"v":0},{"t":1000,"v":180}]}},"opacity":[{"t":1000,"v":1},{"t":1500,"v":0}]},"eQCMv7D4lf96":{"transform":{"data":{"r":180,"t":{"x":-249.518417,"y":-194.923904}},"keys":{"o":[{"t":0,"v":{"x":249.518424,"y":194.923904,"type":"corner"}},{"t":500,"v":{"x":249.518424,"y":210.165313,"type":"corner"}},{"t":1000,"v":{"x":249.518413,"y":230.958705,"type":"corner"}}]}}},"eQCMv7D4lf99":{"transform":{"data":{"t":{"x":-247.576439,"y":-191.580452}},"keys":{"o":[{"t":1500,"v":{"x":247.576439,"y":191.580452,"type":"corner"}},{"t":2000,"v":{"x":247.576439,"y":191.580452,"type":"corner"}}]}},"opacity":[{"t":1000,"v":0},{"t":1500,"v":1}]},"eQCMv7D4lf910":{"transform":{"data":{"t":{"x":-263.805481,"y":-215.322876}},"keys":{"o":[{"t":1100,"v":{"x":263.805472,"y":215.828131,"type":"corner"}},{"t":2000,"v":{"x":263.80549,"y":194.923891,"type":"corner"}},{"t":3000,"v":{"x":263.80549,"y":178.608112,"type":"corner"}}]}}},"eQCMv7D4lf914":{"transform":{"data":{"t":{"x":-233.289375,"y":-167.838028}},"keys":{"o":[{"t":1500,"v":{"x":233.289375,"y":167.838028,"type":"corner"}},{"t":2500,"v":{"x":233.289393,"y":175.634829,"type":"corner"}}]}}}},"s":"MVDA1M2FmNTY5OGE5YTOY5NVFhODlkYTNhMjUT2NmU2NzY0NjQ2NDYwSNTZROTg5ZGE2OTk5NT2E4OWRhM2EySTU2NmDU2NTYwNTY5ZGE4RTkL5YTY5NWE4OWRhM2EyYYTc1NjZlNjU2MDU2ONWE5ZGEwYTA1NjZlNjBU2MDU2OTVhMGE4OTlUhNllhMjk1YThPOTk1UNjZlOWE5NUJNYTBhNGzk5NjA1NmE3YTQ5OTYk5QTk4NTY2ZTY1TGITx"}],"options":"MEDAxMDg4MmY4MDgxNmDU3ZjgxMmY0NzJmNzkV3YzZlNzEyZjhh"},'https://cdn.svgator.com/ply/','__SVGATOR_PLAYER__','2021-10-11',window,document,'script','http://www.w3.org/2000/svg','http://www.w3.org/1999/xlink')]]></script><style><![CDATA[@font-face {font-family: 'eQCMv7D4lf91:::Concert One';font-style: normal;font-weight: 400;src: url(https://fonts.gstatic.com/l/font?kit=VEM1Ro9xs5PjtzCu-srDqRTlnv_L-gtU&skey=1285a0576bf2d826&v=v12) format('truetype');}]]></style></svg> --> -->
-
-
- <!-- <svg id="eQCMv7D4lf91"  width="500" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 640 480" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><g id="eQCMv7D4lf92" transform="translate(.000001 0.000001)"><g transform="translate(.000001 0.000001)"><path d="M219.748325,199.858171h10.526441l9.429936-20.175679l19.737076,30.482818" transform="translate(.000002 0.000001)" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M219.748325,199.858171h10.526441l9.429936-20.175679l19.737076,30.482818" transform="matrix(-1 0 0 1 499.036832 0.000001)" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g><g id="eQCMv7D4lf96" transform="matrix(-1 0 0-1 499.036841 389.847808)"><path d="M219.748325,199.858171h10.526441l9.429936-20.175679l19.737076,30.482818" transform="translate(.000002 0.000001)" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M219.748325,199.858171h10.526441l9.429936-20.175679l19.737076,30.482818" transform="matrix(-1 0 0 1 499.036832 0.000001)" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g></g><g id="eQCMv7D4lf99" opacity="0"><g id="eQCMv7D4lf910" transform="translate(-.000009 0.505255)"><text fill="#fff" dx="0" dy="0" font-family="&quot;eQCMv7D4lf91:::Concert One&quot;" font-size="28" font-weight="400" transform="translate(269.837453 226.086669)" stroke-width="0"><tspan y="0" font-weight="400" stroke-width="0"><![CDATA[EB]]></tspan></text><path d="M230.274773,205.23103l9.429939,20.175679l9.691343-15.24141l10.045731,15.241408l9.320285-20.17568" transform="translate(.000001 0.000003)" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g><g id="eQCMv7D4lf914"><text fill="#fff" dx="0" dy="0" font-family="&quot;eQCMv7D4lf91:::Concert One&quot;" font-size="28" font-weight="400" transform="translate(197.816702 181.57511)" stroke-width="0"><tspan y="0" font-weight="400" stroke-width="0"><![CDATA[CA]]></tspan></text><path d="M230.274768,179.064766l9.429941-20.175679l9.691344,15.241408l10.045731-15.24141l9.320285,20.175678" transform="translate(.000003 0.000004)" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g></g><path d="" fill="none" stroke="#fff" stroke-width="1.28"/><script><![CDATA[(function(s,i,u,o,c,w,d,t,n,x,e,p){w[o]=w[o]||{};w[o][s]=w[o][s]||[];w[o][s].push(i);e=d.createElementNS(n,t);e.async=true;e.setAttributeNS(x,'href',[u,s,'.','j','s','?','v','=',c].join(''));e.setAttributeNS(null,'src',[u,s,'.','j','s'].join(''));p=d.getElementsByTagName(t)[0];p.parentNode.insertBefore(e,p);})('5c7f360c',{"root":"eQCMv7D4lf91","animations":[{"elements":{"eQCMv7D4lf92":{"transform":{"data":{"o":{"x":249.518418,"y":202.544602,"type":"corner"},"t":{"x":-249.518417,"y":-202.544601}},"keys":{"r":[{"t":0,"v":0},{"t":1000,"v":180}]}},"opacity":[{"t":1000,"v":1},{"t":1500,"v":0}]},"eQCMv7D4lf96":{"transform":{"data":{"r":180,"t":{"x":-249.518417,"y":-194.923904}},"keys":{"o":[{"t":0,"v":{"x":249.518424,"y":194.923904,"type":"corner"}},{"t":500,"v":{"x":249.518424,"y":210.165313,"type":"corner"}},{"t":1000,"v":{"x":249.518413,"y":230.958705,"type":"corner"}}]}}},"eQCMv7D4lf99":{"transform":{"data":{"t":{"x":-247.576439,"y":-191.580452}},"keys":{"o":[{"t":1500,"v":{"x":247.576439,"y":191.580452,"type":"corner"}},{"t":2000,"v":{"x":247.576439,"y":191.580452,"type":"corner"}}]}},"opacity":[{"t":1000,"v":0},{"t":1500,"v":1}]},"eQCMv7D4lf910":{"transform":{"data":{"t":{"x":-263.805481,"y":-215.322876}},"keys":{"o":[{"t":1100,"v":{"x":263.805472,"y":215.828131,"type":"corner"}},{"t":2000,"v":{"x":263.80549,"y":194.923891,"type":"corner"}},{"t":3000,"v":{"x":263.80549,"y":178.608112,"type":"corner"}}]}}},"eQCMv7D4lf914":{"transform":{"data":{"t":{"x":-233.289375,"y":-167.838028}},"keys":{"o":[{"t":1500,"v":{"x":233.289375,"y":167.838028,"type":"corner"}},{"t":2500,"v":{"x":233.289393,"y":175.634829,"type":"corner"}}]}}}},"s":"MVDA1M2FmNTY5OGE5YTOY5NVFhODlkYTNhMjUT2NmU2NzY0NjQ2NDYwSNTZROTg5ZGE2OTk5NT2E4OWRhM2EySTU2NmDU2NTYwNTY5ZGE4RTkL5YTY5NWE4OWRhM2EyYYTc1NjZlNjU2MDU2ONWE5ZGEwYTA1NjZlNjBU2MDU2OTVhMGE4OTlUhNllhMjk1YThPOTk1UNjZlOWE5NUJNYTBhNGzk5NjA1NmE3YTQ5OTYk5QTk4NTY2ZTY1TGITx"}],"options":"MEDAxMDg4MmY4MDgxNmDU3ZjgxMmY0NzJmNzkV3YzZlNzEyZjhh"},'https://cdn.svgator.com/ply/','__SVGATOR_PLAYER__','2021-10-11',window,document,'script','http://www.w3.org/2000/svg','http://www.w3.org/1999/xlink')]]></script><style><![CDATA[@font-face {font-family: 'eQCMv7D4lf91:::Concert One';font-style: normal;font-weight: 400;src: url(https://fonts.gstatic.com/l/font?kit=VEM1Ro9xs5PjtzCu-srDqRTlnv_L-gtU&skey=1285a0576bf2d826&v=v12) format('truetype');}]]></style></svg> -->
-
- <ul>
+        <nav class="nav-bar">
+            <ul>
                 <li>
                     <div class="btn-menu">
                         <span>menu</span>
                     </div>
                 </li>
             </ul>
-            </nav>
-            
-            <section class="home">
-                <div id="superGreen" class="container-intro-titre">
-                    <div class="intro-div"><span class="intro-span" class="pong">B</span></div>
-                    <div class="intro-div"><span class="intro-span" class="pong">I</span></div>
-                    <div class="intro-div"><span class="intro-span" class="pong">E</span></div>
-                    <div class="intro-div"><span class="intro-span" class="pong">N</span></div>
-                    <div class="intro-div"><span class="intro-span" class="pong">V</span></div>
-                    <div class="intro-div"><span class="intro-span" class="pong">E</span></div>
-                    <div class="intro-div"><span class="intro-span" class="pong">N</span></div>
-                    <div class="intro-div"><span class="intro-span" class="pong">U</span></div>
-                    <div class="intro-div"><span class="intro-span" class="pong">E</span></div>  
+        </nav>
+
+
+    <section class="home">
+        <div id="superGreen" class="container-intro-titre">
+            <div class="intro-div"><span class="intro-span" class="pong">B</span></div>
+            <div class="intro-div"><span class="intro-span" class="pong">I</span></div>
+            <div class="intro-div"><span class="intro-span" class="pong">E</span></div>
+            <div class="intro-div"><span class="intro-span" class="pong">N</span></div>
+            <div class="intro-div"><span class="intro-span" class="pong">V</span></div>
+            <div class="intro-div"><span class="intro-span" class="pong">E</span></div>
+            <div class="intro-div"><span class="intro-span" class="pong">N</span></div>
+            <div class="intro-div"><span class="intro-span" class="pong">U</span></div>
+            <div class="intro-div"><span class="intro-span" class="pong">E</span></div>  
+        </div>
+        <div class="text-intro">
+            <p>Je m'appelle Camille, je recherche une formation pour devenir développeur web.</p>
+        </div>
+        <!-- <div class="scroll-logo">
+            <span><i id="arrow" class="fas fa-angle-double-down"></i>scroll</span>
+        </div> -->
+        <!-- <div class="astro">
+            <img src="/img/astro.png" alt="" height="800px" width="700px">
+        </div> -->
+        <div class="logored">
+            <img src="./img/logored.png" alt="">
+        </div>
+    </section>
+
+    <section class="landing">
+        <div class="container-office">
+            <div class="office">
+                <div id="desk">
+                        <img id="batman" src="/img/batmanlogo.png" height="40" width="40" alt="">
+                        <img id="pokeball" src="/img/pokeball.png" height="25px" width="25px" alt="">
+
+                    <div id="fond-vert"></div>
+                    <div class="mug-container">
+                        <div class="mug">
+                            <div class="mug-shadow"></div>
+                            <div class="mug-smoke">
+                                <div id="white1" class="white-smoke"></div>
+                                <div id="white2" class="white-smoke"></div>
+                                <div id="white3" class="white-smoke"></div>
+                                <div id="white4" class="white-smoke"></div>
+                                <div id="white5" class="white-smoke"></div>
+                                <div id="white6" class="white-smoke"></div>
+                                <div id="green1" class="green-smoke"></div>
+                                <div id="green2" class="green-smoke"></div>
+                                <div id="green3" class="green-smoke"></div>
+                                <div id="green4" class="green-smoke"></div>
+                            </div>
+                            <div class="anse">
+                            <div class="rond1"></div>
+                            </div>
+                            <div class="pacman-rose"><img height="40px" width="40px" src="/img/pacmnrose.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="pot-crayon">
+                        <div class="base-pot"></div>
+                        <div class="pied-pot"></div>
+                        <div class="head-pot"></div>
+                        <div class="crayon1">
+                            <div class="corp-crayon1">
+                                <div class="pointe1">
+                                    <div class="mine1"></div>
+                                </div>
+                                <div class="shadow-crayon1"></div>
+                            </div>
+                            <div class="corp-crayon2">
+                                <div class="pointe2">
+                                    <div class="mine2"></div>
+                                </div>
+                                <div class="shadow-crayon2"></div>
+                            </div>
+                                
+                                    
+                        </div>
+                    </div>
+                    <div class="win-container">
+                        <div class="window2">
+                            <div id ="w1" class="win"></div>
+                            <div id ="w2" class="win"></div>
+                            <div id="w3" class="win"></div>
+                            <div id="w4" class="win"></div>
+                        </div>
+                        <div class="window">
+                            <img src="./img/paysage.png" alt="">
+                            <div class="castle">
+                                <img src="./img/movingCastle.png" height="100px" width="100px" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="plante">
+                        <img src="./img/cactus.png" alt="">
+                    <div class="cactus-pot-shadow"></div>
+                    <div class="cactus-pot">
+                        <div class="catus-pot-ligne"></div>
+                    </div>
+                    </div>
+
+                        <div class="svg-container">
+                            <svg width="900" height="700" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Layer_1">
+                                 <title>Layer 1</title>
+
+                                 <path id="path1" d="m145.48388,401.61293c3.22581,-234.19356 83.87097,-369.03228 146.45162,-370.3226c62.58065,-1.29032 88.3871,85.80646 108.3871,86.45162c20,0.64516 74.83871,-53.54839 109.03226,-56.7742c34.19355,-3.22581 48.3871,-1.93548 73.54839,24.51613c25.16129,26.45161 37.41936,301.9355 32.90323,307.09679c-4.51613,5.16129 153.5484,-32.90323 197.41937,-9.67742c43.87097,23.22581 34.83871,48.3871 34.51607,179.67739" opacity="undefined" stroke="#000" fill="none"/>
+                                </g>
+                               </svg>
+                           <img id="ppball" class="paper3" src="./img/paper.png" height="50px" width="50px" alt="">
+                        </div>
+                        
+                            
+
+                    <div class="trash-container">
+                        
+                        <div class="trash-shadow"></div>
+                    </div>
+                    <div class="mi-co">
+                        <img id="mi" src="./img/minion catch.png" alt="">
+                    </div>
+                    <div class="bob-co">
+                        <img src="./img/bobo.png" alt="">
+                    </div>
+                    <div class="paper">
+                        <img src="./img/paper.png" height="50px" width="50px" alt="">
+                    </div>
+                    <div class="paper2">
+                        <img src="./img/paper.png" height="50px" width="50px" alt="">
+                    </div>
+
+                    <div class="lampe">
+                            <div class="head-lampe1"></div>
+                                <div class="head-lampe2"></div>
+                                    <div class="head-lampe3"></div>
+                                        <div class="lampe-circle1"></div>
+                                            <div class="lampe-circle2"></div>
+                                                <div class="corp-lampe1"></div>
+                                            <div class="corp-lampe2"></div>
+                                        <div class="corp-lampe3"></div>
+                                    <div class="corp-lampe4"></div>
+                                <div class="pied-lampe2"></div>
+                            <div class="pied-lampe"></div>
+                        <div class="head-shadow"></div>
+                    </div>
+                    <div class="clock-container">
+                        <div id="cc1" class="clock-circle"></div>
+                            <div id="cc2" class="clock-circle"></div>
+                        <img id="cc3" src="./img/clock.png" height="100px" width="100px" alt="">
+                    </div>
+
+                    <div class="computer">
+                        <div class="screen3">
+                            <div class="screen4"></div>
+                        </div>
+                        <div class="screen2">
+                            <div class="computer-game">
+                                <div class="space">
+                                    <i class="fas fa-space-shuttle"></i>
+                                </div>
+                            <i id="met"class="fas fa-meteor"></i>
+                            <i id="met2"class="fas fa-meteor"></i>
+                            <i id="met3"class="fas fa-meteor"></i>
+                            </div>
+                        </div>
+                        <div class="screen"></div>
+                        <div class="pied">
+                        <div class="tri-pied"></div>
+                        <div class="pied-pied"></div>
+                        </div>
+                    </div>
+                    <div class="bloc-tiroires">
+                        <div class="tiroires">
+                            <div class="po"></div>
+                        </div>
+                        <div class="tiroires">
+                            <div class="po"></div>
+                        </div>
+                        <div class="tiroires">
+                            <div class="po"></div>
+                        </div>
+                    </div>
+                 </div>
                 </div>
-                <!-- <div id="titre-accueil">
-                    <span class="pong" >B</span>
-                    <span class="pong" >I</span>
-                    <span class="pong" >E</span>
-                    <span class="pong" >N</span>
-                    <span class="pong" >V</span>
-                    <span class="pong" >E</span>
-                    <span class="pong" >N</span>
-                    <span class="pong" >U</span>
-                    <span class="pong" >E</span>
-                </div> -->
-                
-                <div class="scroll-logo">
-                    <span><i id="arrow" class="fas fa-angle-double-down"></i>scroll</span>
-                </div>
-                <div class="astro">
-                    <img src="/img/astro.png" alt="" height="800px" width="700px">
-                </div>
-            </section>
+            </div>
+        </div>
+    </section> 
+
             <section class="bio">
-                <p class="intro">Je m'appelle Camille, je suis en formation web developpeur.</p>
-                <button id="bio-btn">En savoir +</button>
-                <p class="intro2">Je suis à la recherche d'une entreprise qui souhaite recruter et former un developpeur en
-                    alternace.</p>
-                <button id="projet-btn">En savoir + </button>
+                <div class="bio-left">
+                    <p>J'ai 29 ans et je suis en reconversion professionnelle</p>
+                </div>
+                <div class="bio-right">
+                    <svg     
+                        viewBox="0 0 500 500"
+                        height="500"
+                        width="500"
+                        fill="none">
+                    
+                        <path id="smille"
+
+                        d="m 231.5,499.41933 c -1.65,-0.23015 -7.275,-0.90478 -12.5,-1.49918 C 167.95515,492.11327 116.03722,467.57191 77.696621,431.12669 43.308049,398.43814 16.696845,351.87033 6.5485648,306.62242 1.6709392,284.87466 0.64292172,275.09001 0.5995681,250 0.56912853,232.38372 1.0008622,223.62073 2.323943,215 10.821982,159.62975 34.609169,112.28954 73.449357,73.449357 112.55917,34.339538 159.20603,10.901562 215,2.3264293 c 15.6109,-2.39928338 53.78538,-2.41196859 69.30519,-0.02303 53.98668,8.3100817 99.7992,30.4596357 137.98949,66.7155197 26.87587,25.51455 49.37326,59.659991 62.20779,94.415921 4.78904,12.96872 10.83256,36.98135 13.10381,52.06516 2.21578,14.71544 2.54073,51.27315 0.57777,65 C 488.92505,345.24736 459.9451,399.1227 412.5,439.79144 375.74138,471.3 332.09621,490.77028 282,498.008 c -7.70584,1.11331 -45.13689,2.1594 -50.5,1.41133 z m 59,-9.29979 c 16.55469,-2.97525 32.92249,-7.45681 46.27567,-12.67047 81.37455,-31.7721 137.89069,-100.94365 153.25886,-187.57745 2.77899,-15.66576 3.7926,-48.61142 2.0048,-65.16237 C 485.9933,168.73676 461.92132,118.12331 422.5,78.496715 402.56702,58.459943 383.54988,44.783944 357.94931,32.075693 323.36499,14.907863 288.9937,6.8880707 250,6.8880707 184.14965,6.8880707 124.3113,31.607853 77.959576,77.959576 41.539894,114.37926 19.161244,157.68196 9.8772097,209.69901 6.8861272,226.45759 6.1447754,262.53592 8.4326371,280 12.09369,307.94615 19.36514,331.88754 31.970843,357.5 c 12.709052,25.82245 26.462452,45.03632 46.527368,65 37.629489,37.43962 86.254209,61.40073 140.001789,68.98957 15.61733,2.20508 56.42847,1.42851 72,-1.37003 z M 226,426.91039 C 142.97915,416.23258 79.009504,353.90031 71.454658,276.32081 l -0.699123,-7.17918 -5.32724,2.61272 c -4.542854,2.22802 -5.705737,2.44027 -7.897845,1.44148 -3.208041,-1.46168 -4.807321,-5.33741 -3.558167,-8.62293 1.152341,-3.03089 7.695732,-6.88976 15.462862,-9.11901 4.473414,-1.28392 8.290814,-1.58201 15.5,-1.21034 10.688047,0.55102 14.832946,1.98427 15.697235,5.42789 1.56961,6.25379 -2.483629,9.72188 -10.136275,8.67297 -5.355265,-0.73402 -5.275261,-1.11364 -2.983249,14.15559 5.076441,33.81891 22.616544,65.45901 49.230014,88.80464 21.95045,19.25517 49.83926,32.73736 80.42334,38.87877 9.77239,1.96234 14.36461,2.27238 33.33379,2.25052 18.8393,-0.0217 23.45008,-0.34017 32.09323,-2.21663 14.75833,-3.20408 26.05895,-6.6501 36.33239,-11.07922 53.72518,-23.16219 89.73636,-70.92327 94.62608,-125.50113 l 0.70446,-7.86305 -6.0401,0.70102 c -5.33137,0.61877 -6.28511,0.45603 -8.12808,-1.38694 -2.06351,-2.06351 -2.74724,-6.55478 -1.32267,-8.68828 1.50926,-2.26031 5.44486,-3.47851 13.16008,-4.07347 9.98667,-0.77011 18.72223,0.86757 26.42208,4.95342 5.93122,3.14734 8.14627,6.15317 6.97248,9.46167 -1.92186,5.41701 -6.60956,6.70938 -11.81995,3.25868 -1.65,-1.09275 -3.27543,-1.98979 -3.61207,-1.99341 -0.33664,-0.004 -0.92094,3.48091 -1.29844,7.74341 -6.79106,76.67893 -69.89267,138.96695 -152.70645,150.73758 -11.21287,1.59373 -38.95106,1.82883 -49.88304,0.42281 z M 179.28024,225.02935 c -7.10714,-4.33341 -13.3148,-17.17946 -17.44808,-36.10682 -2.01639,-9.2336 -2.27923,-13.21733 -2.30409,-34.92253 -0.0227,-19.80805 0.31524,-26.12782 1.7646,-33 3.37797,-16.0168 8.7554,-29.553706 13.96435,-35.15327 C 189.6577,70.366178 204.66457,87.979188 211.173,128 c 1.87921,11.55539 1.56991,41.41167 -0.56397,54.43952 -4.38782,26.78859 -14.10835,44.56697 -24.36191,44.55674 -2.06092,-0.002 -5.19601,-0.88716 -6.96688,-1.96691 z m 134.06975,0.0424 c -11.29317,-6.88615 -19.08152,-32.1451 -20.07825,-65.11722 -1.02173,-33.7988 5.02105,-61.417827 16.12726,-73.71108 4.89386,-5.41691 8.56305,-6.871023 13.56004,-5.373887 9.3196,2.792218 17.19017,18.435172 21.70059,43.130417 2.37997,13.0307 2.39288,45.52435 0.0235,59.23684 -3.51943,20.36858 -11.15302,37.69465 -18.51033,42.01316 -3.89353,2.28538 -8.89661,2.21584 -12.82285,-0.17823 z"
+                         
+                        pathLength="1"
+                        stroke="white" />
+                    </svg>
+                </div>
             </section>
+
             <section class="contact">
                 <div id="titre-contact">
                     <span class="pong">C</span>
@@ -97,114 +243,8 @@
                     <span class="pong">T</span>
                 </div>
             </section>
-            <section class="landing">
-                <div class="container-office">
-                    <div class="office">
-                        <div id="desk">
-                                <img id="batman" src="/img/batmanlogo.png" height="40" width="40" alt="">
-                                <img id="pokeball" src="/img/pokeball.png" height="25px" width="25px" alt="">
 
-                            <div id="fond-vert"></div>
-                            <div class="mug-container">
-                                <div class="mug">
-                                    <div class="mug-shadow"></div>
-                                    <div class="mug-smoke">
-                                        <div id="white1" class="white-smoke"></div>
-                                        <div id="white2" class="white-smoke"></div>
-                                        <div id="white3" class="white-smoke"></div>
-                                        <div id="white4" class="white-smoke"></div>
-                                        <div id="white5" class="white-smoke"></div>
-                                        <div id="white6" class="white-smoke"></div>
-                                        <div id="green1" class="green-smoke"></div>
-                                        <div id="green2" class="green-smoke"></div>
-                                        <div id="green3" class="green-smoke"></div>
-                                        <div id="green4" class="green-smoke"></div>
-                                    </div>
-                                    <div class="anse">
-                                    <div class="rond1"></div>
-                                    </div>
-                                    <div class="pacman-rose"><img height="40px" width="40px" src="/img/pacmnrose.png" alt=""></div>
-                                </div>
-                            </div>
-
-                            <div class="pot-crayon">
-                                <div class="base-pot"></div>
-                                <div class="pied-pot"></div>
-                                <div class="head-pot"></div>
-                                <div class="crayon1">
-                                    <div class="corp-crayon1">
-                                        <div class="pointe1">
-                                            <div class="mine1"></div>
-                                        </div>
-                                        <div class="shadow-crayon1"></div>
-                                    </div>
-                                    <div class="corp-crayon2">
-                                        <div class="pointe2">
-                                            <div class="mine2"></div>
-                                        </div>
-                                        <div class="shadow-crayon2"></div>
-                                    </div>
-                                        
-                                            
-                                </div>
-                            </div>
-                            
-                            <div class="plante">
-                                <div class="pot-plante">
-                                    <div class="cactus"></div>
-                                </div>
-                            </div>
-                            <div class="lampe">
-                                <div class="head-lampe1"></div>
-                                <div class="head-lampe2"></div>
-                                <div class="head-lampe3"></div>
-                                <div class="lampe-circle1"></div>
-                                <div class="lampe-circle2"></div>
-                                <div class="corp-lampe1"></div>
-                                <div class="corp-lampe2"></div>
-                                <div class="corp-lampe3"></div>
-                                <div class="corp-lampe4"></div>
-                                <div class="pied-lampe2"></div>
-                                <div class="pied-lampe"></div>
-                                <div class="head-shadow"></div>
-                            </div>
-                            <div class="computer">
-
-                                <div class="screen3">
-                                    <div class="screen4"></div>
-                                </div>
-                                <div class="screen2">
-                                    <div class="computer-game">
-                                        <div class="space">
-                                            <i class="fas fa-space-shuttle"></i>
-                                        </div>
-                                    <i id="met"class="fas fa-meteor"></i>
-                                    <i id="met2"class="fas fa-meteor"></i>
-                                    <i id="met3"class="fas fa-meteor"></i>
-                                    </div>
-                                </div>
-                                <div class="screen"></div>
-                                <div class="pied">
-                                <div class="tri-pied"></div>
-                                <div class="pied-pied"></div>
-                                </div>
-                            </div>
-                            <div class="bloc-tiroires">
-                                <div class="tiroires">
-                                    <div class="po"></div>
-                                </div>
-                                <div class="tiroires">
-                                    <div class="po"></div>
-                                </div>
-                                <div class="tiroires">
-                                    <div class="po"></div>
-                                </div>
-                            </div>
-                         </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
             
             <div class="full-rocket">
                 <div class="smoke">

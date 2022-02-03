@@ -1,41 +1,16 @@
-gsap.registerPlugin(ScrollTrigger);
-// *********** LOAD PAGE ANIM ****************
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
-// let intro = gsap.timeline({delay:1});
-// intro.to(".intro-up", {duration:8, y:-innerHeight})
-// .to(".intro-down", {duration:8,y:innerHeight}, "-= 8");
- 
-// let time1 = gsap.timeline({delay:3});
-// time1.to(".container-intro-titre",{
-//     duration:3,
-//     x:-295,
-//     y:20
-// });
-// time1.to(".container-intro-titre",{
-//     opacity:0
-// });
-// time1.to(".miniLogo", {
-//     opacity:1
-// })
-// .to(".load-page", {
-//     backgroundColor:"transparent",
-//     y:-innerHeight,
-// }, "-=.5")
-// ;
+//  *** BIENVENUE ANIMATION *** \\
 
-// ScrollTrigger.create({
-//     animation:intro,
-//     markers:true,
-//     start:"center center",
-//     end:"bottom center",
-//     scrub:4
-// });
-
-
-
+let redLogoTl = gsap.timeline();
+redLogoTl.to('.logored', {
+    delay:.5,
+    duration:3,
+    opacity:1,
+    rotate:360
+});
 
 let spanIntroDelay = 800;
-
 setTimeout(spanSlide, spanIntroDelay);
 
 function spanSlide(){
@@ -64,7 +39,7 @@ function spanSlide(){
     });
 }
 
-addClassName(spanIntro, addClass);
+    addClassName(spanIntro, addClass);
 
 
     for(var i=0; i<spanIntro.length; i++){
@@ -74,7 +49,7 @@ addClassName(spanIntro, addClass);
     }
 }
 let ping = document.getElementById("superGreen").childNodes;
-console.log(ping);
+
 ping = Array.prototype.slice.call(ping);
 
 for (i=0; i<ping.length; i++){
@@ -87,6 +62,11 @@ for (i=0; i<ping.length; i++){
     } )
 }
 
+// let bvDown = gsap.to('#superGreen', {
+//     duration:5,
+//     y:700,
+//     delay:2.7
+// });
 //  ************* LETTRE REBOND ANIMATION **************** 
 
 let lettres = document.querySelectorAll(".pong");
@@ -111,6 +91,140 @@ let astroTween = gsap.to(".astro", {
     repeat:-1,
 });
 
+// ************* CASTLE ANIM *************
+let movingCastle = gsap.to(".castle", {
+    duration:35,
+    x:-420,
+    ease: "none",
+    repeat:-1
+});
+
+//************** PAPER TRASH *************
+let pep = gsap.timeline();
+pep.to(".paper3", {
+ 
+    duration:2,
+    motionPath: {
+        path: "#path1",
+        align: "#path1",
+        alignOrigin: [0.5, 0.5]
+    }
+});
+
+pep.pause();
+
+let pp = document.getElementById("ppball");
+
+
+pp.addEventListener('click', () => {
+
+    let ma = 2;
+    let flo = Math.floor(Math.random() * ma);
+
+        if(flo == 0){
+
+            let pa = document.getElementById("path1");
+            pa.getAttribute('d');
+            da = pa.getAttribute('d');
+            gsap.to('.mi-co', {
+                delay:1.3,
+                duration:0.1,
+                y:-80,
+                x:-15
+            });
+            pep.play();
+            setTimeout(function(){
+                pep.pause(1.40);
+            }, 1400);
+
+
+        } else if(flo == 1){
+
+            let pa = document.getElementById("path1");
+            pa.setAttribute("d", "m173,404c38,-225 52,-253 88,-293c36,-40 91,-95 171,-82c80,13 230,52 269,102c39,50 134,176 145,222c11,46 31,214 31,214");
+            pep.play();
+        } 
+});
+
+
+//****************  SCROLL NAV ********************* */
+
+let lastScroll = 0;
+let navBar = document.querySelector('nav');
+let scrollArow = document.querySelector('.scroll-logo');
+
+window.addEventListener('scroll', () => {
+    
+    let scro = window.pageYOffset;
+    
+    if(scro > lastScroll){
+        console.log("down");
+        navBar.style.top = "-10vh";
+
+    } else {
+        console.log("up");
+        navBar.style.top = "0";
+
+    }
+    lastScroll = scro <= 0 ? 0 : scro;
+}, false);
+
+function scr(){
+    scrollArow.style.left = "10px";
+
+    if(window.addEventListener('scroll', () => {
+        let scro = window.pageYOffset;
+        if(scro > lastScroll){
+
+            scrollArow.style.left = "-160px";
+
+        } else {
+
+            scrollArow.style.left = "0";
+        }
+        lastScroll = scro <= 0 ? 0 : scro;
+    }, false));
+};
+
+
+
+
+
+
+// let pp = document.querySelector('.paper3');
+// pp.addEventListener('click', trashAnim);
+// function trashAnim(){
+//     console.log("start");
+//     let ma = 3;
+//     let flo = Math.floor(Math.random() * ma);
+//         if(flo == 0){
+//             console.log(flo);
+//             trash1();
+//         } else if(flo == 1){
+//             console.log(flo);
+//             trash2();
+//         } else if(flo == 2){
+//             console.log(flo);
+//             trash3();
+//         }
+// };
+// function trash1(){
+//     pp.classList.add('clickpaper1');
+// }
+// function trash2(){
+//     pp.classList.add('clickpaper2');
+// }
+// function trash3(){
+//     pp.classList.add('clickpaper3');
+// }
+// let tr = gsap.timeline();
+// gsap.to("#path1", {xPercent:-50, yPercent:-50});
+// tr.to(".paper3", {
+//     duration:5,
+//     motionPath: {
+//         path:"#path1"
+//     }
+// });
 // //************* ROCKET ANIMATION *************
 
 // // *** SMOKE ANIM *** 
